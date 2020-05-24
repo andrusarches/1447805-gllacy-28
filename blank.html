@@ -19,6 +19,15 @@
         <ul>
           <li>
             <a href="catalog.html">Каталог</a>
+            <div>
+              <b><a href="blank.html">Новинки</a></b>
+              <ul>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="blank.html">Щербеты</a></li>
+                <li><a href="blank.html">Фруктовый лед</a></li>
+                <li><a href="blank.html">Мелорин</a></li>
+              </ul>
+            </div>
           </li>
           <li>
             <a href="blank.html">Доставка и оплата</a>
@@ -32,10 +41,27 @@
       <!-- Search, Login, and Shopping Cart -->
       <ul>
         <li>
-          <a href="blank.html"><span></span>Поиск</a>    <!--Добавил span'ы под иконки-->
+          <a href="blank.html"><span></span>Поиск</a>
+          <div>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search">Форма поиска</label>
+              <input id="search" type="search" name="search" placeholder="Крем-брюле">
+            </form>
+          </div>
         </li>
         <li>
           <a href="blank.html"><span></span>Вход</a>
+          <div>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="login-login">Логин</label>
+              <input id="login-login" type="email" name="login-login" placeholder="email@example.com" required>
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input id="login-password" type="password" name="login-password" placeholder="••••••" required>
+              <button type="submit">Войти</button>
+              <a href="blank.html">Забыли пароль?</a>
+              <a href="blank.html">Новая регистрация</a>
+            </form>
+          </div>
         </li>
         <li>
           <a href="blank.html"><span></span>Корзина</a>

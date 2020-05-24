@@ -19,6 +19,15 @@
         <ul>
           <li>
             <a href="catalog.html">Каталог</a>
+            <div>
+              <b><a href="blank.html">Новинки</a></b>
+              <ul>
+                <li><a>Сливочное</a></li>
+                <li><a href="blank.html">Щербеты</a></li>
+                <li><a href="blank.html">Фруктовый лед</a></li>
+                <li><a href="blank.html">Мелорин</a></li>
+              </ul>
+            </div>
           </li>
           <li>
             <a href="blank.html">Доставка и оплата</a>
@@ -33,12 +42,49 @@
       <ul>
         <li>
           <a href="blank.html"><span></span>Поиск</a>
+          <div>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search">Форма поиска</label>
+              <input id="search" type="search" name="search" placeholder="Крем-брюле">
+            </form>
+          </div>
         </li>
         <li>
           <a href="blank.html"><span></span>Вход</a>
+          <div>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="login-login">Логин</label>
+              <input id="login-login" type="email" name="login-login" placeholder="email@example.com" required>
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input id="login-password" type="password" name="login-password" placeholder="••••••" required>
+              <button type="submit">Войти</button>
+              <a href="blank.html">Забыли пароль?</a>
+              <a href="blank.html">Новая регистрация</a>
+            </form>
+          </div>
         </li>
         <li>
-          <a href="blank.html"><span></span><span>2</span> товара</a>
+          <a href="blank.html" class="visually-hidden">Корзина<span></span><span>2 товара</span></a>
+          <div>
+            <ul>
+              <li>
+                <button class="visually-hidden" type="button">Удалить товар из корзины</button>
+                <img src="img/shopping-cart-ice-cream-01.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <a href="blank.html">Пломбир с апельсиновым джемом</a>
+                <p>1,5 кг &#215; <span>200 руб.</span></p>
+                <p>300 руб.</p>
+              </li>
+              <li>
+                <button class="visually-hidden" type="button">Удалить товар из корзины</button>
+                <img src="img/shopping-cart-ice-cream-03.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <a href="blank.html">Клубничный пломбир с присыпкой из белого шоколада</a>
+                <p>1,5 кг &#215; <span>300 руб.</span></p>
+                <p>450 руб.</p>
+              </li>
+            </ul>
+            <p><b>Итого: 750 руб.</b></p>
+            <a href="blank.html">Оформить заказ</a>
+          </div>
         </li>
       </ul>
 
@@ -72,7 +118,7 @@
         <h2>Фильтр товаров</h2>  <!-- Hidden Heading -->
         <form>
           <!-- Здесь будет форма выбора товаров в каталоге -->
-          <button>Применить</button>
+          <button type="button">Применить</button>
         </form>
       </section>
 

@@ -19,6 +19,15 @@
         <ul>
           <li>
             <a href="catalog.html">Каталог</a>
+            <div>
+              <b><a href="blank.html">Новинки</a></b>
+              <ul>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="blank.html">Щербеты</a></li>
+                <li><a href="blank.html">Фруктовый лед</a></li>
+                <li><a href="blank.html">Мелорин</a></li>
+              </ul>
+            </div>
           </li>
           <li>
             <a href="blank.html">Доставка и оплата</a>
@@ -33,9 +42,26 @@
       <ul>
         <li>
           <a href="blank.html"><span></span>Поиск</a>
+          <div>
+            <form action="https://echo.htmlacademy.ru" method="get">
+              <label class="visually-hidden" for="search">Форма поиска</label>
+              <input id="search" type="search" name="search" placeholder="Крем-брюле">
+            </form>
+          </div>
         </li>
         <li>
           <a href="blank.html"><span></span>Вход</a>
+          <div>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label class="visually-hidden" for="login-login">Логин</label>
+              <input id="login-login" type="email" name="login-login" placeholder="email@example.com" required>
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input id="login-password" type="password" name="login-password" placeholder="••••••" required>
+              <button type="submit">Войти</button>
+              <a href="blank.html">Забыли пароль?</a>
+              <a href="blank.html">Новая регистрация</a>
+            </form>
+          </div>
         </li>
         <li>
           <a href="blank.html"><span></span>Корзина</a>
@@ -76,9 +102,9 @@
 
         <!-- Slider Buttons -->
         <div>
-          <button type="button">1</button>
-          <button type="button">2</button>
-          <button type="button">3</button>
+          <button type="button">1 слайд</button>
+          <button type="button">2 слайд</button>
+          <button type="button">3 слайд</button>
         </div>
       </section>
 
@@ -232,5 +258,21 @@
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </section>
     </footer>
+
+    <!-- Feedback Form -->
+    <section>
+        <h2>Форма обратной связи</h2>  <!-- Hidden Heading -->
+        <h3>Мы обязательно вам ответим!</h3>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="feedback-name">Имя, Фамилия</label>
+          <input id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия" required>
+          <label class="visually-hidden" for="">Адрес электронной почты</label>
+          <input id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com" required>
+          <label class="visually-hidden" for="feedback-message">Текст сообщения</label>
+          <input id="feedback-message" type="text" name="feedback-message" placeholder="В свободной форме" required>
+          <button type="submit">Отправить</button>
+        </form>
+        <button class="visually-hidden" type="button">Закрыть форму обратной связи</button>
+      </section>
   </body>
 </html>
