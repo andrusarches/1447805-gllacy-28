@@ -41,7 +41,7 @@
       <!-- Search, Login, and Shopping Cart -->
       <ul>
         <li>
-          <a href="blank.html"><span></span>Поиск</a>
+          <a href="blank.html" aria-label="Поиск по сайту магазина мороженого «Глэйси»"><span></span>Поиск</a>
           <div>
             <form action="https://echo.htmlacademy.ru" method="get">
               <label class="visually-hidden" for="search">Форма поиска</label>
@@ -50,7 +50,7 @@
           </div>
         </li>
         <li>
-          <a href="blank.html"><span></span>Вход</a>
+          <a href="blank.html" aria-label="Перейти на страницу логина"><span></span>Вход</a>
           <div>
             <form action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="login-login">Логин</label>
@@ -64,15 +64,16 @@
           </div>
         </li>
         <li>
-          <a href="blank.html"><span></span>Корзина</a>
+          <a href="blank.html" aria-label="Перейти на страницу корзины"><span></span>Корзина</a>
         </li>
       </ul>
 
       <!-- Contact Information> -->
       <div>
+        <h2 class="visually-hidden">Время работы и телефон магазина мороженого «Глэйси»</h2>
         <p>
           с 10 до 20, ежедневно<br>
-          <a href="tel:+7(812)450-25-25">8 812 450-25-25</a>
+          <a href="tel:+7(812)450-25-25" aria-label="Телефон магазина мороженого «Глэйси»">8 812 450-25-25</a>
         </p>
       </div>
     </header>
@@ -201,8 +202,10 @@
         <section>
           <h2>Подписка на новостную рассылку магазина мороженого «Глэйси»</h2>  <!-- Hidden Heading -->
           <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form>
-            <!--Здесь будет форма подписки на новостную рассылку-->
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="newsletter-signup">Форма подписки на новостную рассылку</label>
+            <input id="newsletter-signup" type="email" name="newsletter-signup" placeholder="Электронная почта" required>
+            <button type="submit">Отправить</button>
           </form>
         </section>
       </div>
