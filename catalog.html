@@ -110,7 +110,6 @@
 
       <!-- Contact Information> -->
       <div>
-        <h2 class="visually-hidden">Время работы и телефон магазина мороженого «Глэйси»</h2>
         <p>
           с 10 до 20, ежедневно<br>
           <a href="tel:+7(812)450-25-25" aria-label="Телефон магазина мороженого «Глэйси»">8 812 450-25-25</a>
@@ -120,92 +119,74 @@
 
     <!-- Page Main -->
     <main>
-
       <!--Catalog Navigation-->
-      <section>
-        <h2 class="visually-hidden">Навигация по уровням сайта и каталога</h2>  <!-- Hidden Heading -->
-        <ul>
-          <li>
-            <a href="index.html">Главная</a>
-          </li>
-          <li>
-            <a href="catalog.html">Каталог</a>
-          </li>
-          <li>
-            <a>Сливочное</a>
-          </li>
-        </ul>
-      </section>
-      <h1>Сливочное мороженое</h1>
+      <ul>
+        <li>
+          <a href="index.html" aria-label="Переход на главную страницу">Главная</a>
+        </li>
+        <li>
+          <a href="catalog.html" aria-label="Переход на основную страницу каталога">Каталог</a>
+        </li>
+        <li>
+          <a aria-label="Текущий подраздел каталога">Сливочное</a>
+        </li>
+      </ul>
 
+      <h1>Сливочное мороженое</h1>
       <!-- Product Filter-->
       <section>
         <h2 class="visually-hidden">Фильтр товаров</h2>  <!-- Hidden Heading -->
         <form action="https://echo.htmlacademy.ru" method="get">
-          <ul>
-            <li>
-              <fieldset>
-                <legend>Сортировка</legend>
-                <label for="sorting-principle" class="visually-hidden">Выбор принципа сортировки мороженого в каталоге</label>
-                <select name="filter-sorting-principle" id="sorting-principle">
-                  <option value="popularity" selected>по популярности</option>
-                </select>
-              </fieldset>
-              <fieldset>
-                <legend>Цена 100 &#8381; - 500 &#8381;</legend>
-                <span></span> <!-- Здесь будет фильтр по цене -->
-              </fieldset>
-              <fieldset>
-                <legend>Жирность</legend>
-                <ul>
-                  <li>
-                    <input type="radio" id="fat-level-0" name="filter-fat-level" value="0">
-                    <label for="fat-level-0">0%</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="fat-level-under-10" name="filter-fat-level" value="under-10" checked>
-                    <label for="fat-level-under-10">до 10%</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="fat-level-under-30" name="filter-fat-level" value="under-30">
-                    <label for="fat-level-under-30">до 30%</label>
-                  </li>
-                  <li>
-                    <input type="radio" id="fat-level-over-30" name="filter-fat-level" value="over-30">
-                    <label for="fat-level-under-30">выше 30%</label>
-                  </li>
-                </ul>
-              </fieldset>
-            </li>
-            <li>
-              <fieldset>
-                <legend>Наполнители</legend>
-                  <ul>
-                    <li>
-                      <input type="checkbox" id="topping-chocolate" name="filter-topping-chocolate" checked>
-                      <label for="topping-chocolate">шоколадные</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="topping-sugar" name="filter-topping-sugar" checked>
-                      <label for="topping-sugary">сахарные присыпки</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="topping-fruits" name="filter-topping-fruits">
-                      <label for="topping-fruity">фрукты</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="topping-syrup" name="filter-topping-syrup">
-                      <label for="topping-syrup">сиропы</label>
-                    </li>
-                    <li>
-                      <input type="checkbox" id="topping-jam" name="filter-topping-jam">
-                      <label for="topping-jam">джемы</label>
-                    </li>
-                  </ul>
-              </fieldset>
-              <button type="submit">Применить</button>
-            </li>
-          </ul>
+          <fieldset>
+            <legend>Сортировка</legend>
+            <select name="filter-sorting-principle" id="sorting-principle">
+              <option value="by-popularity" selected>по популярности</option>
+              <option value="inexpensive-first">сначала недорогие</option>
+              <option value="premium-first">сначала дорогие</option>
+              <option value="by-fat-level">по популярности</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Цена <span>100</span> &#8381; - <span>500</span> &#8381;</legend>
+            <span></span> <!-- Здесь будет фильтр по цене -->
+          </fieldset>
+          <fieldset>
+            <legend>Жирность</legend>
+            <input type="radio" id="fat-level-0" name="filter-fat-level" value="0">
+            <label for="fat-level-0">0%</label>
+            <input type="radio" id="fat-level-under-10" name="filter-fat-level" value="under-10" checked>
+            <label for="fat-level-under-10">до 10%</label>
+            <input type="radio" id="fat-level-under-30" name="filter-fat-level" value="under-30">
+            <label for="fat-level-under-30">до 30%</label>
+            <input type="radio" id="fat-level-over-30" name="filter-fat-level" value="over-30">
+            <label for="fat-level-over-30">выше 30%</label>
+          </fieldset>
+          <fieldset>
+            <legend>Наполнители</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="topping-chocolate" name="filter-topping-chocolate" checked>
+                <label for="topping-chocolate">шоколадные</label>
+              </li>
+              <li>
+                <input type="checkbox" id="topping-sugar" name="filter-topping-sugar" checked>
+                <label for="topping-sugar">сахарные присыпки</label>
+              </li>
+              <li>
+                <input type="checkbox" id="topping-fruits" name="filter-topping-fruits">
+                <label for="topping-fruits">фрукты</label>
+              </li>
+              <li>
+                <input type="checkbox" id="topping-syrup" name="filter-topping-syrup">
+                <label for="topping-syrup">сиропы</label>
+              </li>
+              <li>
+                <input type="checkbox" id="topping-jam" name="filter-topping-jam">
+                <label for="topping-jam">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Применить</button>
         </form>
       </section>
 
