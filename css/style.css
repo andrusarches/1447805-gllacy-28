@@ -220,7 +220,7 @@ img {
 
 .shopping-cart-contents {
   color: var(--font-color-secondary);
-
+  display: none;
   font-size: 13px;
   line-height: 16px;
 }
