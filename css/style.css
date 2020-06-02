@@ -1,32 +1,22 @@
 /* Variables */
 
 :root {
-  --background-green: #849D8F;
-  --background-brown: #9D8B84;
-  --background-grey: #8996A6;
-  --background-newsletter-subscription: #F8F7F4;
-  --img-background-advantages: #ede1c7;
-  --img-background-blogpost: #ffffff;
-  --img-background-promo-2-kilograms-1: #912746;
-  --img-background-promo-2-kilograms-2: #4c3930;
+  --bg-green: #849D8F;
+  --bg-brown: #9D8B84;
+  --bg-grey: #8996A6;
+  --bg-newsletter-subscription: #F8F7F4;
+  --img-bg-advantages: #ede1c7;
   --font-color-primary: #FFFFFF;
   --font-color-secondary: #323232;
-  --font-color-shopping-cart-contents-price-per-1: color: #ababab;
-  --button-basic: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-  --button-basic-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
-  --button-basic-text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-  --button-basic-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-  --button-basic-shadow-hover: 0px 2px 2px #AC1000;
-  --button-basic-active: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-  --button-basic-shadow-active: inset 0px 2px 2px #942718;
-  --menu-element-span-border: 1px solid rgba(255,255,255, 0.25);
-  --menu-element-span-border-invisible: 1px solid rgba(255,255,255, 0);
   --menu-element-active-background: #ededed;
-  --menu-element-active-shadow: inset 0px 2px 1px #696969;
+  --menu-element-active-shadow: #696969;
   --menu-element-on-page: #d07058;
-  --button-search-login-shopping-cart: rgba(255, 255, 255, 0.2);
+  --transparent-white: rgba(255, 255, 255, 0.2);
+  --link-basic-border: rgba(255,255,255, 0.25);
+  --link-basic-border-invisible: rgba(255,255,255, 0);
   --link-basic-hover: #ffbc9e;
   --link-basic-border-hover: rgba(255, 188, 158, 0.3);
+  --input-text-color: #999999;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -51,11 +41,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  font-style: normal;
   color: var(--font-color-primary);
-  background-color: var(--background-green);
+  background-color: var(--bg-green);
 }
 
 a {
@@ -73,29 +64,31 @@ img {
 }
 
 .button-basic {
+  font-family: inherit;
+  font-style: normal;
   color: var(--font-color-primary);
-  background: var(--button-basic);
-  box-shadow: var(--button-basic-shadow);
+  background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
   font-weight: bold;
-  text-shadow: var(--button-basic-text-shadow);
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   border-radius: 50px;
   border: none;
 }
 
 .button-basic:hover,
 .button-basic:focus {
-  background: var(--button-basic-hover);
-  box-shadow: var(--button-basic-shadow-hover);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  box-shadow: 0px 2px 2px #AC1000;
 }
 
 .button-basic:active {
-  background: var(--button-basic-active);
-  box-shadow: var(--button-basic-shadow-active);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  box-shadow: inset 0px 2px 2px #942718;
 }
 
 .link-basic {
   color: var(--font-color-primary);
-  border-bottom: var(--menu-element-span-border);
+  border-bottom: 1px solid var(--link-basic-border);
 }
 
 .link-basic:focus,
@@ -103,6 +96,10 @@ img {
 .link-basic:active {
   color: var(--link-basic-hover);
   border-color: var(--link-basic-border-hover);
+}
+
+.logo {
+  font-size: 0;
 }
 
 
@@ -115,49 +112,39 @@ img {
 
 .menu-element {
   color: var(--font-color-primary);
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
   padding: 9px 13px 11px 13px;
-}
-
-.menu-element-on-page {
-  color: var(--font-color-primary);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 18px;
-  padding: 9px 13px 11px 13px;
-  background-color: var(--menu-element-on-page);
   border-radius: 26px;
 }
 
+.menu-element-on-page {
+  background-color: var(--menu-element-on-page);
+}
+
 .menu-element span {
-  border-bottom: var(--menu-element-span-border);
+  border-bottom: 1px solid var(--link-basic-border);
 }
 
 .menu-element-on-page > span {
-  border-bottom: var(--menu-element-span-border-invisible);
+  border-color: var(--link-basic-border-invisible);
 }
 
 .menu-element:hover,
 .menu-element:focus {
   color: var(--font-color-secondary);
   background-color: var(--font-color-primary);
-  border-radius: 26px;
 }
 
 .menu-element:hover span,
 .menu-element:focus span {
-  border-bottom: var(--menu-element-span-border-invisible);
+  border-color: var(--link-basic-border-invisible);
 }
 
 .menu-element:active {
-  background: var(--menu-element-active-background);
-  box-shadow: var(--menu-element-active-shadow);
+  background-color: var(--menu-element-active-background);
+  box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
 }
 
   /* Submenu */
@@ -173,53 +160,47 @@ img {
 
 .submenu a {
   color: var(--font-color-secondary);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 16px;
 }
 
 /* Login, Search, and Shopping Cart */
 
-.search-login-shopping-cart {
+.user-menu {
   list-style: none;
 }
 
-.search-login-shopping-cart input {
+.user-menu input {
+  color: var(--input-text-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
   background-color: var(--font-color-primary);
   border: 1px solid #D3D3D2;
   border-radius: 4px;
 }
 
-.button-search-login-shopping-cart {
+.user-menu-button {
   color: var(--font-color-primary);
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  background-color: var(--button-search-login-shopping-cart);
+  background-color: var(--transparent-white);
   border-radius: 20px;
   padding: 8px 16px;
 }
 
-.button-search-login-shopping-cart:focus,
-.button-search-login-shopping-cart:hover {
+.user-menu-button:focus,
+.user-menu-button:hover {
   color: var(--font-color-secondary);
   background-color: var(--font-color-primary);
 }
 
-.button-search-login-shopping-cart-full {
+.user-menu-button-full {
   color: var(--font-color-secondary);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
   background-color: var(--font-color-primary);
-  border-radius: 20px;
-  padding: 8px 16px;
 }
 
 .search-form {
@@ -232,53 +213,41 @@ img {
 
 .login-form a {
   color: var(--font-color-secondary);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 13px;
   line-height: 15px;
   border-bottom: 1px solid rgba(50, 50, 50, 0.3);
 }
 
 .shopping-cart-contents {
-  display: none;
+  color: var(--font-color-secondary);
+
+  font-size: 13px;
+  line-height: 16px;
 }
 
 .shopping-cart-contents img {
   border-radius: 50%;
 }
 
-.shopping-cart-contents a {
-  color: var(--font-color-secondary);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 16px;
-}
-
-.shopping-cart-contents p {
-  color: var(--font-color-secondary);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 16px;
-}
-
 .shopping-cart-contents span {
-  color: var(--font-color-shopping-cart-contents-price-per-1);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
+  color: #ababab;
+}
+
+.shopping-cart-item {
+  color: var(--font-color-secondary);
+
+}
+
+.shopping-cart-item-weight {
+  color: #000000;
+  }
+
+.shopping-cart-total {
+  font-size: 15px;
   line-height: 16px;
 }
 
 .shopping-cart-contents a.button-basic {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 16px;
 }
@@ -287,8 +256,6 @@ img {
 
 .contact-info p {
   color: var(--font-color-primary);
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -296,8 +263,6 @@ img {
 
 .contact-info a {
   color: var(--font-color-primary);
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 22px;
   line-height: 24px;
@@ -307,9 +272,6 @@ img {
 /* Main */
 
 .page-heading {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 35px;
   line-height: 41px;
 }
@@ -321,84 +283,55 @@ img {
 }
 
 .promo-slider h3 {
-  color: var(--font-color-primary);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 60px;
   line-height: 60px;
 }
 
 .promo-slider a {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 32px;
   line-height: 44px;
 }
 
 /* Promo 2 kilograms */
 
-.promo-plaques {
+.promo-tiles {
 
 }
 
-.promo-2-kilograms {
-
+.promo-tile {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 16px;
 }
 
-.promo-2-kilograms h3 {
-color: var(--font-color-primary);
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
+.promo-tile h3 {
 font-size: 35px;
 line-height: 41px;
 }
 
-.promo-2-kilograms p {
-color: var(--font-color-primary);
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 22px;
+.promo-tile p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
 }
 
-.promo-2-kilograms {
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 18px;
-line-height: 24px;
+.promo-tile-raspberry {
+  background-color: #912746;
+  background-image: url(../img/background-promo-raspberry.jpg);
 }
 
-.promo-2-kilograms-1 {
-background-color: var(--img-background-promo-2-kilograms-1);
-background-image: url(/img/background-promo-raspberry.jpg);
-background-repeat: no-repeat;
-background-position: 50% 50%;
-border-radius: 16px;
-}
-
-.promo-2-kilograms-2 {
-background-color: var(--img-background-promo-2-kilograms-2);
-background-image: url(img/background-promo-chocolate.jpg);
-background-repeat: no-repeat;
-background-position: 50% 50%;
-border-radius: 16px;
+.promo-tile-choco {
+  background-color: #4c3930;
+  background-image: url(../img/background-promo-chocolate.jpg);
 }
 
   /* Catalog Breadcrumbs */
 
-.catalog-breadcrumbs {
+.breadcrumbs {
   list-style: none;
 }
 
-.catalog-breadcrumbs a {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+.breadcrumbs a {
   font-size: 14px;
   line-height: 16px;
 }
@@ -414,25 +347,18 @@ border-radius: 16px;
 }
 
 .catalog-items-list h3 {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
 }
 
 .catalog-items-list a.button-basic {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
 
 .catalog-item-price {
   color: var(--font-color-primary);
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 45px;
   line-height: 45px;
@@ -441,9 +367,6 @@ border-radius: 16px;
 }
 
 .catalog-item-price span {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 30px;
   line-height: 35px;
 }
@@ -451,8 +374,8 @@ border-radius: 16px;
   /* Advantages Section */
 
 .advantages {
-  background-color: var(--img-background-advantages);
-  background-image: url(/img/background-waffle-pattern.jpg);
+  background-color: var(--img-bg-advantages);
+  background-image: url(../img/background-waffle-pattern.jpg);
   background-repeat: repeat;
   border-radius: 16px;
 }
@@ -463,20 +386,13 @@ border-radius: 16px;
 
 .advantages-slogan {
   color: var(--font-color-secondary);
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
 }
 
-.advantages-paragraph {
+.advantages-item {
   color: var(--font-color-secondary);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
 }
 
   /* Blogpost & Newsletter Subscription */
@@ -484,10 +400,10 @@ border-radius: 16px;
     /* Blogpost */
 
 .blogpost {
-  background-color: var(--img-background-blogpost);
-  background-image: url(/img/background-blogpost-strawberry);
+  background-color: #ffffff;
+  background-image: url(../img/background-blogpost-strawberry.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: top right;
   border-radius: 16px;
 }
 
@@ -509,7 +425,7 @@ border-radius: 16px;
     /* Newsletter Subscription */
 
 .newsletter-subscription-border {
-  background-image: url(/img/bg-post.svg);
+  background-image: url(../img/bg-post.svg);
   background-repeat: repeat;
   background-position: 50% 50%;
   border-radius: 16px;
@@ -517,19 +433,22 @@ border-radius: 16px;
 }
 
 .newsletter-subscription {
-  background-color: var(--background-newsletter-subscription);
+  background-color: var(--bg-newsletter-subscription);
   border-radius: 16px;
   overflow: hidden;
 }
 
 .newsletter-subscription p {
   color: var(--font-color-secondary);
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
 }
 
 .newsletter-subscription input {
+  color: var(--input-text-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
   background-color: var(--font-color-primary);
   border: 1px solid #D3D3D2;
   border-radius: 4px;
@@ -539,28 +458,22 @@ border-radius: 16px;
   /* Interactive Map */
 
 .interactive-map {
-  bacgkround-image: url(/img/map.png);
+  background-image: url(../img/map.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .map-contacts {
   display: none;
+  color: var(--font-color-secondary);
 }
 
 .map-contacts p {
-  color: var(--font-color-secondary);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
 }
 
 .map-contacts address {
-  color: var(--font-color-secondary);
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -568,32 +481,23 @@ border-radius: 16px;
 
 .map-contacts b {
   color: var(--font-color-secondary);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.map-contacts a {
   font-size: 18px;
   line-height: 24px;
 }
 
 .map-contacts a.button-basic {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.map-contacts a.button-basic {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
 
 /* Footer */
 
-.social-media-links ul {
+.social-links ul {
   list-style: none;
 }
 
@@ -622,11 +526,7 @@ border-radius: 16px;
   list-style: none;
 }
 
-.business-information a {
-  color: var(--font-color-primary);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+.business-information a.link-basic {
   font-size: 13px;
   line-height: 18px;
 }
@@ -634,27 +534,21 @@ border-radius: 16px;
 .business-information .for-suppliers {
   font-weight: bold;
 }
-
-.html-academy-copyright {
-  color: var(--font-color-primary);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+.copyright {
   font-size: 12px;
   line-height: 18px;
 }
+.copyright-text {
 
-.html-academy-copyright a {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+}
+
+.copyright-link {
+
 }
 
 
 /* Pop-ups */
 
-.pop-up-feedback {
+.pop-up {
   display: none;
 }
