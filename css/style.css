@@ -533,7 +533,7 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
 .newsletter-subscription .button-basic {
   font-size: 18px;
   line-height: 24px;
-  padding: 10px 19px;
+  padding: 14px 19px 13px 19px;
 }
 
 
@@ -574,8 +574,22 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
 }
 
 /* Paginator */
+
+
 .paginator a {
   color: var(--font-color-primary);
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.paginator a:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
 
 .paginator-back {
@@ -587,11 +601,9 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
 }
 
 .paginator-page {
-  border-radius: 50%;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  border-radius: 50%;
 }
 
 .paginator-page:hover {
