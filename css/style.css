@@ -355,7 +355,7 @@ header .logo {
 }
 
 .promo-slide {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
@@ -389,10 +389,6 @@ header .logo {
   bottom: 23px;
   left: 0;
 }
-
-.slide-inactive {
-    display: none;
-  }
 
 .slide-active {
     display: flex;
