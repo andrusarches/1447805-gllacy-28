@@ -133,8 +133,7 @@ img {
   position: relative;
 }
 
-header .logo {
-  margin: 0;
+.logo-gllacy {
   font-size: 0;
   line-height: 0;
 }
@@ -407,14 +406,13 @@ header .logo {
 .promo-tile {
   display: flex;
   flex-direction: column;
-  background-repeat: no-repeat;
+
   background-position: 50% 50%;
   padding: 16px 22px 22px 16px;
   border-radius: 16px;
   width: 560px;
   min-height: 229px;
   overflow: hidden;
-  position: relative;
 }
 
 .promo-tile h3 {
@@ -435,9 +433,6 @@ header .logo {
   font-size: 18px;
   line-height: 20px;
   padding: 16px 22px 13px 22px;
-  position: absolute;
-  bottom: 22px;
-  right: 22px;
   align-self: flex-end;
   margin-top: auto;
 }
@@ -558,6 +553,7 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-left: -13px;
+  margin-right: -13px;
 }
 
 .catalog-items-list li {
@@ -952,6 +948,10 @@ a.paginator-on-page,
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 26px;
+}
+
+.logo-html-academy {
+  line-height: 0;
 }
 
 .copyright-text {
