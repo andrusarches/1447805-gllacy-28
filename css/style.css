@@ -406,7 +406,6 @@ img {
 .promo-tile {
   display: flex;
   flex-direction: column;
-
   background-position: 50% 50%;
   padding: 16px 22px 22px 16px;
   border-radius: 16px;
@@ -472,24 +471,38 @@ img {
 .catalog-filter {
   font-weight: 500;
   line-height: 18px;
-  margin-top: 29px;
-  outline: 1px solid #c12ba1;
+  width: 869px;
+  margin-left: 0;
+  margin-top: 17px;
+}
+
+.catalog-filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .catalog-filter fieldset {
   border: none;
-  outline: 1px solid #c12ba1;
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+
 }
 
 .catalog-filter ul {
-list-style: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .filter-legend {
-font-size: 14px;
-line-height: 16px;
-border: none;
-
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  margin-left: 16px;
+  margin-bottom: 10px;
 }
 
 .filter-sorting-principle {
@@ -500,20 +513,50 @@ border: none;
   background-color: var(--transparent-white);
   border: none;
   border-radius: 20px;
+  height: 36px;
+  padding: 0 12px;
 }
 
 .filter-sorting-principle:hover {
   color: var(--font-color-secondary);
 }
 
+.filter-price-range {
+  width: 218px;
+  background-color: var(--transparent-white);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+  height: 36px;
+}
+
 .filter-radio {
   background-color: var(--transparent-white);
   border-radius: 20px;
+  padding: 9px 17px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 425px;
+
 }
 
 .filter-toppings {
   background-color: var(--transparent-white);
   border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 711px;
+}
+
+.filter-toppings li {
+  padding: 9px 10px;
+}
+
+.label-checkbox {
+
 }
 
 .filter-button {
