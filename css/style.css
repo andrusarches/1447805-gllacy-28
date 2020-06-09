@@ -710,23 +710,23 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
   width: 287px;
   justify-content: flex-start;
   align-content: flex-start;
-  margin: 21px 20px; /* OLD VALUE - margin: 23px 20px; - старое значение, новое подобрано по PixelPerfect */
+  margin: 21px 20px;
 }
 
 .blogpost h3 {
   color: var(--font-color-secondary);
   font-weight: bold;
   font-size: 16px;
-  line-height: 16px;   /* OLD VALUE - 22px; */
+  line-height: 16px;
   margin: 0;
-  margin-bottom: 6px; /* OLD VALUE - 15px; */
+  margin-bottom: 6px;
 }
 
 .blogpost a {
   color: var(--font-color-secondary);
   font-weight: bold;
   font-size: 24px;
-  line-height:  31px; /* OLD VALUE - 30px; */
+  line-height:  31px;
   text-decoration: underline;
   margin: 0;
 }
@@ -752,7 +752,7 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
   border-radius: 16px;
   overflow: hidden;
   height: 100%;
-  padding: 25px 16px 15px 20px; /* OLD VALUE - 29px 16px 10px 20px; */
+  padding: 25px 16px 15px 20px;
 }
 
 .newsletter-subscription article {
@@ -773,7 +773,7 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
   display: flex;
   align-items: baseline;
   margin-right: 4px;
-  margin-top: 40px; /* OLD VALUE - 47px; */
+  margin-top: 40px;
 }
 
 .newsletter-subscription input {
