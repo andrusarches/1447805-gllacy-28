@@ -491,12 +491,6 @@ img {
 
 }
 
-.catalog-filter ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .filter-legend {
   font-size: 14px;
   line-height: 16px;
@@ -524,11 +518,39 @@ img {
 .filter-price-range {
   width: 218px;
   background-color: var(--transparent-white);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   border-radius: 20px;
   height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 21px;
+  position: relative;
+}
+
+.filter-price-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.range-line-selected {
+  position: absolute;
+  top: 17px;
+  left: 34px;
+}
+
+.range-selector-1 {
+  position: absolute;
+  top: 8px;
+  left: 34px;
+  cursor: pointer;
+}
+
+.range-selector-2 {
+  position: absolute;
+  top: 8px;
+  left: 132px;
+  cursor: pointer;
 }
 
 .filter-radio {
@@ -536,23 +558,27 @@ img {
   border-radius: 20px;
   padding: 9px 17px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 425px;
+  flex-wrap: wrap;
+}
 
+.filter-radio input {
+  margin-left: 33px;
 }
 
 .filter-toppings {
   background-color: var(--transparent-white);
   border-radius: 20px;
   display: flex;
-  justify-content: space-around;
   align-content: center;
-  width: 711px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 9px 19px;
 }
 
 .filter-toppings li {
-  padding: 9px 10px;
+  margin-left: 33px;
 }
 
 .label-checkbox {
