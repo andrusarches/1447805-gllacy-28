@@ -20,18 +20,16 @@
         <!-- Site Menu -->
         <nav class="site-menu">
           <ul class="site-menu-list">
-            <li>
-              <div class="nav-catalog">
-                <a class="menu-element" href="catalog.html"><span>Каталог</span></a>
-                <div class="submenu">
-                  <ul class="submenu-list">
-                    <li><a class="submenu-link" href="blank.html"><b>Новинки</b></a></li>
-                    <li><a class="submenu-link" href="catalog.html">Сливочное</a></li>
-                    <li><a class="submenu-link" href="blank.html">Щербеты</a></li>
-                    <li><a class="submenu-link" href="blank.html">Фруктовый лед</a></li>
-                    <li><a class="submenu-link" href="blank.html">Мелорин</a></li>
-                  </ul>
-                </div>
+            <li class="nav-catalog">
+              <a class="menu-element catalog-link" href="catalog.html"><span>Каталог</span></a>
+              <div class="submenu">
+                <ul class="submenu-list">
+                  <li><a class="submenu-link" href="blank.html"><b>Новинки</b></a></li>
+                  <li><a class="submenu-link" href="catalog.html">Сливочное</a></li>
+                  <li><a class="submenu-link" href="blank.html">Щербеты</a></li>
+                  <li><a class="submenu-link" href="blank.html">Фруктовый лед</a></li>
+                  <li><a class="submenu-link" href="blank.html">Мелорин</a></li>
+                </ul>
               </div>
             </li>
             <li>
@@ -53,7 +51,7 @@
               <div class="dropdown-search">
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                   <label class="visually-hidden" for="search">Форма поиска</label>
-                  <input class="search-field input-custom" id="search" type="search" name="search" placeholder="Крем-брюле">
+                  <input class="search-field input-custom input-text-small" id="search" type="search" name="search" placeholder="Крем-брюле">
                 </form>
               </div>
             </div>
@@ -67,9 +65,9 @@
               <div class="dropdown-login-menu">
                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="login-login">Логин</label>
-                  <input class="input-custom" id="login-login" type="email" name="login-login" placeholder="email@example.com" required>
+                  <input class="input-custom input-text-small" id="login-login" type="email" name="login-login" placeholder="email@example.com" required>
                   <label class="visually-hidden" for="login-password">Пароль</label>
-                  <input class="input-custom" id="login-password" type="password" name="login-password" placeholder="••••••" required>
+                  <input class="input-custom input-text-small" id="login-password" type="password" name="login-password" placeholder="••••••" required>
                   <button class="button-basic" type="submit">Войти</button>
                   <div class="register-recover">
                     <a class="link-basic" href="blank.html">Забыли пароль?</a>
@@ -160,7 +158,22 @@
                 </div>
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-01.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-                  <p class="catalog-item-price">310 &#8381;<span>/кг</span></p>
+                  <p class="catalog-item-price"><span>310</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                  <g filter="url(#filter0_d)">
+                  <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                  <feOffset dy="1"/>
+                  <feGaussianBlur stdDeviation="1.5"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                  </filter>
+                  </defs>
+                  </svg>/кг</p>
                 </a>
                 <h3><a class="link-basic" href="blank.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
               </article>
@@ -172,7 +185,22 @@
                 </div>
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-02.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-                  <p class="catalog-item-price">380 &#8381;<span>/кг</span></p>
+                  <p class="catalog-item-price"><span>380</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                  <g filter="url(#filter0_d)">
+                  <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                  <feOffset dy="1"/>
+                  <feGaussianBlur stdDeviation="1.5"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                  </filter>
+                  </defs>
+                  </svg>/кг</p>
                 </a>
                 <h3><a class="link-basic" href="blank.html">Сливочно-кофейное с кусочками шоколада</a></h3>
               </article>
@@ -184,9 +212,24 @@
                 </div>
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-03.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
-                  <p class="catalog-item-price">355 &#8381;<span>/кг</span></p>
+                  <p class="catalog-item-price"><span>355</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                  <g filter="url(#filter0_d)">
+                  <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                  <feOffset dy="1"/>
+                  <feGaussianBlur stdDeviation="1.5"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                  </filter>
+                  </defs>
+                  </svg>/кг</p>
                 </a>
-                <h3><a class="link-basic" href="blank.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+                <h3><a class="link-basic" href="blank.html">Сливочно-клубничное с&nbsp;присыпкой из белого шоколада</a></h3>
               </article>
             </li>
             <li>
@@ -196,9 +239,24 @@
                 </div>
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-04.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-                  <p class="catalog-item-price">415 &#8381;<span>/кг</span></p>
+                  <p class="catalog-item-price"><span>415</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                  <g filter="url(#filter0_d)">
+                  <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                  <feOffset dy="1"/>
+                  <feGaussianBlur stdDeviation="1.5"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                  </filter>
+                  </defs>
+                  </svg>/кг</p>
                 </a>
-                <h3><a class="link-basic" href="blank.html">Сливочное крем-брюле с карамельной подливкой</a></h3>
+                <h3><a class="link-basic" href="blank.html">Сливочное крем-брюле с&nbsp;карамельной подливкой</a></h3>
               </article>
             </li>
           </ul>
@@ -207,7 +265,7 @@
       <!-- Advantages Section -->
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>  <!-- Hidden Heading -->
-          <p class="advantages-slogan">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
+          <p class="advantages-slogan">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
           <ul>
             <li>
               <p class="advantages-item icon-ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -230,7 +288,7 @@
             <h2 class="visually-hidden">Новость из блога магазина мороженого «Глэйси»</h2>  <!-- Hidden Heading -->
             <article>
               <h3>Новое в нашем блоге</h3>
-              <p><a href="blank.html">10 способов сервировки фруктовых щербетов к столу</a></p>
+              <p><a href="blank.html">10 способов сервировки фруктовых щербетов к&nbsp;столу</a></p>
             </article>
           </section>
           <div class="newsletter-subscription-border">
@@ -240,7 +298,7 @@
                 <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="newsletter-signup">Форма подписки на новостную рассылку</label>
-                  <input class="input-custom" id="newsletter-signup" type="email" name="newsletter-signup" placeholder="email@example.com" required>
+                  <input class="input-custom input-text-large" id="newsletter-signup" type="email" name="newsletter-signup" placeholder="email@example.com" required>
                   <button class="button-basic" type="submit">Отправить</button>
                 </form>
               </article>
@@ -255,8 +313,8 @@
           <h2 class="visually-hidden">Местонахождение магазина мороженого «Глэйси» на карте</h2>  <!-- Hidden Heading -->
           <div class="map-contacts">
             <div>
-              <p>Адрес главного офиса и офлайн-магазина:</p>
-              <address><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></address>
+              <p>Адрес главного офиса и&nbsp;офлайн-магазина:</p>
+              <address><b>ул. Большая Конюшенная, 19/8, Санкт-Петербург</b></address>
             </div>
             <div>
               <p>Для заказов по телефону:</p>
@@ -313,8 +371,8 @@
                 Для поставщиков
               </a>
             </li>
-            <li><a class="link-basic" href="blank.html">О производстве</a></li>
             <li><a class="link-basic" href="blank.html">Наши документы</a></li>
+            <li><a class="link-basic" href="blank.html">О производстве</a></li>
             <li><a class="link-basic" href="blank.html">Экологические стандарты</a></li>
           </ul>
         </section>
@@ -335,14 +393,15 @@
         <p>Мы обязательно вам ответим!</p>
         <form action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="feedback-name">Имя, Фамилия</label>
-          <input class="pop-up-client-contact input-custom" id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия" required>
+          <input class="pop-up-client-contact input-custom inpput-text-large" id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия" required>
           <label class="visually-hidden" for="feedback-email">Адрес электронной почты</label>
-          <input class="pop-up-client-contact input-custom" id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com" required>
+          <input class="pop-up-client-contact input-custom input-text-large" id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com" required>
           <label class="visually-hidden" for="feedback-message">Текст сообщения</label>
-          <textarea class="pop-up-feedback input-custom" id="feedback-message" name="feedback-message" placeholder="В свободной форме" required></textarea>
+          <textarea class="pop-up-feedback input-custom input-text-large" id="feedback-message" name="feedback-message" placeholder="В свободной форме" required></textarea>
           <button class="button-basic" type="submit">Отправить</button>
         </form>
         <button class="pop-up-close" type="button" aria-laber="Закрыть форму обратной связи"></button>
     </section>
+    <div class="pop-up-overlay"></div>
   </body>
 </html>
