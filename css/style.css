@@ -736,7 +736,7 @@ img {
 .promo-slider a.button-basic {
   font-size: 32px;
   line-height: 30px;
-  padding: 17px 40px;
+  padding: 16px 40px;
 }
 
 .slider-controls {
@@ -1210,21 +1210,12 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
   background-position: center;
   height: 61px;
   width: 61px;
+  background-color: var(--font-color-primary);
+  border-radius: 50%;
 }
 
 .catalog-items-list img {
   border-radius: 50%;
-}
-
-.catalog-items-list h3 {
-  text-align: center;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  margin: 0;
-  margin-top: 13px;
-  max-width: 256px;
-  z-index: 1;
 }
 
 .catalog-item-price {
@@ -1234,9 +1225,8 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
   font-weight: bold;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
   margin: 0;
-  position: absolute;
-  left: 0;
-  top: 212px;
+  margin-top: -55px;
+  align-self: flex-start;
   display: flex;
   align-items: flex-end;
 }
@@ -1251,9 +1241,18 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
 .ruble-icon {
   display: flex;
   align-items: flex-end;
-
 }
 
+.catalog-items-list h3 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-top: 28px;
+  max-width: 256px;
+  z-index: 1;
+}
 
   /* Advantages Section */
 
@@ -1263,7 +1262,7 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
   background-image: url(../img/background-waffle-pattern.jpg);
   background-repeat: repeat;
   border-radius: 16px;
-  padding: 24px 27px 5px 20px;
+  padding: 24px 27px 7px 20px;
 }
 
 .advantages ul {
@@ -1286,11 +1285,15 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
 
 .advantages-item {
   color: var(--font-color-secondary);
-  width: 532px;
+  width: 534px;
   padding-left: 55px;
   margin:0;
   margin-bottom: 24px;
   position: relative;
+}
+
+.advantages-item p {
+  margin: 0;
 }
 
 .advantages-item::before {
@@ -1461,7 +1464,7 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
   font-size: 14px;
   line-height: 18px;
   margin: 0;
-  max-width: 172px;
+  max-width: 190px;
 }
 
 .map-contacts p:first-of-type {
@@ -1602,7 +1605,7 @@ a.paginator-on-page,
   width: 340px;
   padding: 0;
   margin: 0;
-  margin-left: 13px;
+  margin-left: 15px;
 }
 
 .business-information li {
