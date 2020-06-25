@@ -309,6 +309,7 @@
 
       <!-- Interactive Map -->
       <section class="interactive-map">
+        <div class="yandex-maps" id="map"></div>
         <div class="content-wrapper">
           <h2 class="visually-hidden">Местонахождение магазина мороженого «Глэйси» на карте</h2>  <!-- Hidden Heading -->
           <div class="map-contacts">
@@ -321,7 +322,7 @@
               <a href="tel:+7(812)450-25-25"><b>8 812 450-25-25</b></a>
               <p>(с 10 до 20 ежедневно)</p>
             </div>
-            <a class="button-basic" href="blank.html">Форма обратной связи</a>
+            <a class="button-basic button-feedback" href="blank.html">Форма обратной связи</a>
           </div>
         </div>
       </section>
@@ -393,15 +394,19 @@
         <p>Мы обязательно вам ответим!</p>
         <form action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="feedback-name">Имя, Фамилия</label>
-          <input class="pop-up-client-contact input-custom inpput-text-large" id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия" required>
+          <input class="pop-up-client-contact input-custom input-text-large" id="feedback-name" type="text" name="feedback-name" placeholder="Имя Фамилия" required>
           <label class="visually-hidden" for="feedback-email">Адрес электронной почты</label>
           <input class="pop-up-client-contact input-custom input-text-large" id="feedback-email" type="email" name="feedback-email" placeholder="email@example.com" required>
           <label class="visually-hidden" for="feedback-message">Текст сообщения</label>
           <textarea class="pop-up-feedback input-custom input-text-large" id="feedback-message" name="feedback-message" placeholder="В свободной форме" required></textarea>
           <button class="button-basic" type="submit">Отправить</button>
         </form>
-        <button class="pop-up-close" type="button" aria-laber="Закрыть форму обратной связи"></button>
+        <button class="pop-up-close" type="button" aria-label="Закрыть форму обратной связи"></button>
     </section>
     <div class="pop-up-overlay"></div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b7990b01-50d8-4361-b5cd-d2fe49230a9e&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/login.js"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
