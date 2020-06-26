@@ -23,6 +23,42 @@
   --link-basic-hover: #ffbc9e;
   --link-basic-border-hover: rgba(255, 188, 158, 0.3);
   --input-outline-active: rgba(46, 136, 228, 0.52);
+  --button-close: #231f20;
+  --light-grey: #ababab;
+}
+
+/* Keyframes */
+
+@keyframes slide {
+  0% {
+    transform: translate(-50%, -400%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-51%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-49%, -50%);
+  }
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -68,7 +104,6 @@ body {
   color: var(--font-color-primary);
   background-color: var(--bg-green);
 }
-
 
 .page-wrapper-1 {
   background-color: var(--bg-green);
@@ -145,7 +180,6 @@ img {
   line-height: 0;
 }
 
-
 .input-custom {
   color: var(--font-color-secondary);
   font-family: inherit;
@@ -192,7 +226,6 @@ img {
 .input-custom:focus {
   box-shadow: inset 0 0 0 2px rgba(46, 136, 228, 0.52);
 }
-
 
 /* Header */
 
@@ -356,7 +389,6 @@ img {
   background-color: var(--bg-submenu-link-on-page);
   color: var(--font-color-primary);
 }
-
 
 /* Login, Search, and Shopping Cart */
 
@@ -609,7 +641,7 @@ img {
 }
 
 .shopping-cart-unit-price {
-  color: #ababab;
+  color: var(--light-grey);
 }
 
 .shopping-cart-item-remove {
@@ -622,13 +654,6 @@ img {
   border: none;
   cursor: pointer;
   margin-left: 6px;
-}
-
-.shopping-cart-item {
-  color: var(--font-color-secondary);
-  display: block;
-  max-width: 216px;
-  margin-right: 31px;
 }
 
 .shopping-cart-item-weight {
@@ -691,7 +716,6 @@ img {
   margin: 0;
   margin-top: 8px;
 }
-
 
 /* Main */
 
@@ -960,7 +984,7 @@ img {
   width: 4px;
   height: 4px;
   padding: 0;
-  background-color: #ababab;
+  background-color: var(--light-grey);
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 0 0 rgba(171,171,171,0.3);
@@ -1230,6 +1254,7 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
 
 .catalog-items-list img {
   border-radius: 50%;
+  object-fit: contain;
 }
 
 .catalog-item-price {
@@ -1444,7 +1469,6 @@ box-shadow: inset 0px 2px 1px var(--menu-element-active-shadow);
   line-height: 24px;
   padding: 11px 19px 9px 19px;
 }
-
 
   /* Interactive Map */
 
@@ -1707,6 +1731,7 @@ a.paginator-on-page,
   border-radius: 6px;
   padding: 14px 25px 27px 24px;
   z-index: 100;
+  max-height: 100%;
 }
 
 .pop-up-active {
@@ -1748,6 +1773,7 @@ a.paginator-on-page,
   border-radius: 4px;
   min-height: 154px;
   padding: 12px 14px;
+  max-height: calc(100vh - 295px);
 }
 
 .pop-up .button-basic {
@@ -1761,14 +1787,46 @@ a.paginator-on-page,
 .pop-up-close {
   position: absolute;
   top: 15px;
-  right: 16px;
-  background-image: url("../img/cross-big.svg");
-  background-repeat: no-repeat;
+  right: 17px;
   background-color: transparent;
   border: none;
   width: 18px;
   height: 17px;
   cursor: pointer;
+}
+
+.pop-up-close::before,
+.pop-up-close::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -2px;
+  width: 22px;
+  height: 2px;
+  background-color: var(--button-close);
+}
+
+.pop-up-close::after {
+  transform: rotate(45deg);
+}
+
+.pop-up-close::before {
+  transform: rotate(-45deg);
+}
+
+.pop-up-close:focus,
+.pop-up-close:active,
+.pop-up-close:hover {
+  outline: none;
+}
+
+.pop-up-close:focus::before,
+.pop-up-close:focus::after,
+.pop-up-close:hover::after,
+.pop-up-close:hover::before,
+.pop-up-close:active::before,
+.pop-up-close:active::after  {
+  box-shadow: 0 0 3px 3px lightblue;
 }
 
 .pop-up-overlay {
@@ -1784,36 +1842,4 @@ a.paginator-on-page,
 
 .pop-up-overlay-active {
   display: block;
-}
-
-@keyframes slide {
-  0% {
-    transform: translate(-50%, -400%);
-  }
-
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translate(-50%, -50%);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translate(-51%, -50%);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translate(-49%, -50%);
-  }
 }

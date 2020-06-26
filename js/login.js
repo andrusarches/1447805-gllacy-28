@@ -2,7 +2,7 @@ var loginForm = document.querySelector(".login-form");
 var inputLogin = document.querySelector("[name=login-login]");
 var inputPassword = document.querySelector("[name=login-password]");
 
-var isStorageSuportLogin = true;
+var isStorageSupportLogin = true;
 var storageLogin = "";
 
 try {
@@ -11,12 +11,15 @@ try {
   isStorageSupportLogin = false;
 }
 
-feedbackForm.addEventListener("submit", function (evt) {
+if (isStorageSupportLogin) {
+  inputLogin.value = storageLogin;
+}
+
+loginForm.addEventListener("submit", function (evt) {
   if (!inputLogin.value || !inputPassword.value) {
     evt.preventDefault();
-    console.log("Fill out the fields!");
     } else {
-    if (isStorageSuportFeedback) {
+    if (isStorageSupportLogin) {
       localStorage.setItem("Login", inputLogin.value);
     }
   }

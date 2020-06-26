@@ -30,7 +30,7 @@ feedbackButton.addEventListener("click",
     feedbackMessage.focus();
     } else {
     popupInputName.focus();
-    }
+  }
 });
 
 popupClose.addEventListener("click",
@@ -60,13 +60,25 @@ popupOverlay.addEventListener("click", function(evt) {
   }
 });
 
+popupInputName.required = false;
+popupInputEmail.required = false;
+feedbackMessage.required = false;
+
 feedbackForm.addEventListener("submit", function (evt) {
   if (!popupInputName.value || !popupInputEmail.value || !feedbackMessage.value) {
     evt.preventDefault();
-    console.log("1111!!!!");
     popup.classList.remove("pop-up-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("pop-up-error");
+      if (!popupInputName.value) {
+        popupInputName.focus();
+      }
+      if (popupInputName.value && (!popupInputEmail.value || !feedbackMessage.value)) {
+        popupInputEmail.focus();
+      }
+      if ((popupInputName.value && popupInputEmail.value) && !feedbackMessage.value) {
+        feedbackMessage.focus();
+      }
     } else {
     if (isStorageSuportFeedback) {
       localStorage.setItem("FeedbackName", popupInputName.value);

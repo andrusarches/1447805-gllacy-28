@@ -5,9 +5,24 @@
     <title>Каталог сливочного мороженого — Магазин мороженого «Глэйси»</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
+
+    <!-- Custom Rubble Icon Shadow -->
+    <svg class="visually-hidden">
+      <defs>
+        <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+          <feOffset dy="1"></feOffset>
+          <feGaussianBlur stdDeviation="1.5"></feGaussianBlur>
+          <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"></feColorMatrix>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
+        </filter>
+      </defs>
+    </svg>
 
     <!-- Page Header -->
     <div class="content-wrapper">
@@ -242,22 +257,13 @@
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-01.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
                 </a>
-                <p class="catalog-item-price"><span>310</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
-                <g filter="url(#filter0_d)">
-                <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="1"/>
-                <feGaussianBlur stdDeviation="1.5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                </filter>
-                </defs>
-                </svg>/кг</p>
+                <p class="catalog-item-price">
+                  <span>310</span>&nbsp;
+                  <svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                    <g filter="url(#filter0_d)"><path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"></path></g>
+                  </svg>
+                  /кг
+                </p>
                 <h3><a class="link-basic" href="blank.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
               </article>
             </li>
@@ -269,22 +275,13 @@
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-02.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
                 </a>
-                <p class="catalog-item-price"><span>380</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
-                <g filter="url(#filter0_d)">
-                <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="1"/>
-                <feGaussianBlur stdDeviation="1.5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                </filter>
-                </defs>
-                </svg>/кг</p>
+                <p class="catalog-item-price">
+                  <span>380</span>&nbsp;
+                  <svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                    <g filter="url(#filter0_d)"><path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"></path></g>
+                  </svg>
+                  /кг
+                </p>
                 <h3><a class="link-basic" href="blank.html">Сливочно-кофейное с кусочками шоколада</a></h3>
               </article>
             </li>
@@ -296,22 +293,13 @@
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-03.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
                 </a>
-                <p class="catalog-item-price"><span>355</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
-                <g filter="url(#filter0_d)">
-                <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="1"/>
-                <feGaussianBlur stdDeviation="1.5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                </filter>
-                </defs>
-                </svg>/кг</p>
+                <p class="catalog-item-price">
+                  <span>355</span>&nbsp;
+                  <svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                    <g filter="url(#filter0_d)"><path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"></path></g>
+                  </svg>
+                  /кг
+                </p>
                 <h3><a class="link-basic" href="blank.html">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
               </article>
             </li>
@@ -323,22 +311,13 @@
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-04.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
                 </a>
-                <p class="catalog-item-price"><span>415</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
-                <g filter="url(#filter0_d)">
-                <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="1"/>
-                <feGaussianBlur stdDeviation="1.5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                </filter>
-                </defs>
-                </svg>/кг</p>
+                <p class="catalog-item-price">
+                  <span>415</span>&nbsp;
+                  <svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                    <g filter="url(#filter0_d)"><path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"></path></g>
+                  </svg>
+                  /кг
+                </p>
                 <h3><a class="link-basic" href="blank.html">Сливочное крем-брюле с&nbsp;карамельной подливкой</a></h3>
               </article>
             </li>
@@ -350,22 +329,13 @@
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-05.jpg" alt="Сливочное с брусничным джемом" width="267" height="267">
                 </a>
-                <p class="catalog-item-price"><span>325</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
-                <g filter="url(#filter0_d)">
-                <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="1"/>
-                <feGaussianBlur stdDeviation="1.5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                </filter>
-                </defs>
-                </svg>/кг</p>
+                <p class="catalog-item-price">
+                  <span>325</span>&nbsp;
+                  <svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                    <g filter="url(#filter0_d)"><path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"></path></g>
+                  </svg>
+                  /кг
+                </p>
                 <h3><a class="link-basic" href="blank.html">Сливочное с брусничным джемом</a></h3>
               </article>
             </li>
@@ -377,22 +347,13 @@
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-06.jpg" alt="Сливочно-черничное с цельными ягодами черники" width="267" height="267">
                 </a>
-                <p class="catalog-item-price"><span>410</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
-                <g filter="url(#filter0_d)">
-                <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="1"/>
-                <feGaussianBlur stdDeviation="1.5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                </filter>
-                </defs>
-                </svg>/кг</p>
+                <p class="catalog-item-price">
+                  <span>410</span>&nbsp;
+                  <svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                    <g filter="url(#filter0_d)"><path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"></path></g>
+                  </svg>
+                  /кг
+                </p>
                 <h3><a class="link-basic" href="blank.html">Сливочно-черничное с цельными ягодами черники</a></h3>
               </article>
             </li>
@@ -404,22 +365,13 @@
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-07.jpg" alt="Сливочно-лимонное с карамельной присыпкой" width="267" height="267">
                 </a>
-                <p class="catalog-item-price"><span>315</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
-                <g filter="url(#filter0_d)">
-                <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="1"/>
-                <feGaussianBlur stdDeviation="1.5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                </filter>
-                </defs>
-                </svg>/кг</p>
+                <p class="catalog-item-price">
+                  <span>315</span>&nbsp;
+                  <svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                    <g filter="url(#filter0_d)"><path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"></path></g>
+                  </svg>
+                  /кг
+                </p>
                 <h3><a class="link-basic" href="blank.html">Сливочно-лимонное с карамельной присыпкой</a></h3>
               </article>
             </li>
@@ -431,22 +383,13 @@
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-08.jpg" alt="Сливочное с шоколадной стружкой" width="267" height="267">
                 </a>
-                <p class="catalog-item-price"><span>320</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
-                <g filter="url(#filter0_d)">
-                <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="1"/>
-                <feGaussianBlur stdDeviation="1.5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                </filter>
-                </defs>
-                </svg>/кг</p>
+                <p class="catalog-item-price">
+                  <span>320</span>&nbsp;
+                  <svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                    <g filter="url(#filter0_d)"><path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"></path></g>
+                  </svg>
+                  /кг
+                </p>
                 <h3><a class="link-basic" href="blank.html">Сливочное с шоколадной стружкой</a></h3>
               </article>
             </li>
@@ -458,22 +401,13 @@
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-09.jpg" alt="Сливочно-ванильное с кусочками шоколада" width="267" height="267">
                 </a>
-                <p class="catalog-item-price"><span>440</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
-                <g filter="url(#filter0_d)">
-                <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="1"/>
-                <feGaussianBlur stdDeviation="1.5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                </filter>
-                </defs>
-                </svg>/кг</p>
+                <p class="catalog-item-price">
+                  <span>440</span>&nbsp;
+                  <svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                    <g filter="url(#filter0_d)"><path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"></path></g>
+                  </svg>
+                  /кг
+                </p>
                 <h3><a class="link-basic" href="blank.html">Сливочно-ванильноe с&nbsp;кусочками шоколада</a></h3>
               </article>
             </li>
@@ -485,22 +419,13 @@
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-10.jpg" alt="Сливочноe с ментоловым сиропом" width="267" height="267">
                 </a>
-                <p class="catalog-item-price"><span>435</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
-                <g filter="url(#filter0_d)">
-                <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="1"/>
-                <feGaussianBlur stdDeviation="1.5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                </filter>
-                </defs>
-                </svg>/кг</p>
+                <p class="catalog-item-price">
+                  <span>435</span>&nbsp;
+                  <svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                    <g filter="url(#filter0_d)"><path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"></path></g>
+                  </svg>
+                  /кг
+                </p>
                 <h3><a class="link-basic" href="blank.html">Сливочноe с ментоловым сиропом</a></h3>
               </article>
             </li>
@@ -512,22 +437,13 @@
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-11.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
                 </a>
-                <p class="catalog-item-price"><span>355</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
-                <g filter="url(#filter0_d)">
-                <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="1"/>
-                <feGaussianBlur stdDeviation="1.5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                </filter>
-                </defs>
-                </svg>/кг</p>
+                <p class="catalog-item-price">
+                  <span>355</span>&nbsp;
+                  <svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                    <g filter="url(#filter0_d)"><path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"></path></g>
+                  </svg>
+                  /кг
+                </p>
                 <h3><a class="link-basic" href="blank.html">Сливочное с кусочками черного шоколада</a></h3>
               </article>
             </li>
@@ -539,22 +455,13 @@
                 <a href="blank.html">
                   <img src="img/catalog-ice-cream-12.jpg" alt="Сливочное с мятным сиропом" width="267" height="267">
                 </a>
-                <p class="catalog-item-price"><span>420</span>&nbsp;<svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
-                <g filter="url(#filter0_d)">
-                <path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"/>
-                </g>
-                <defs>
-                <filter id="filter0_d" x="0.120605" y="0.0078125" width="34.96" height="37.9922" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-                <feOffset dy="1"/>
-                <feGaussianBlur stdDeviation="1.5"/>
-                <feColorMatrix type="matrix" values="0 0 0 0 0.192157 0 0 0 0 0.196078 0 0 0 0 0.207843 0 0 0 0.5 0"/>
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-                </filter>
-                </defs>
-                </svg>/кг</p>
+                <p class="catalog-item-price">
+                  <span>420</span>&nbsp;
+                  <svg class="ruble-icon" width="36" height="38" viewBox="-2 1 36 37" fill="none">
+                    <g filter="url(#filter0_d)"><path d="M21.1602 29.7373H14.1729V34H7.58105V29.7373H3.12061V24.3979H7.58105V22.728H3.12061V17.3887H7.58105V2.00781H20.0176C22.4199 2.00781 24.5293 2.43994 26.3457 3.3042C28.1621 4.16846 29.5684 5.40625 30.5645 7.01758C31.5752 8.61426 32.0806 10.438 32.0806 12.4888C32.0806 15.6528 31.0039 18.1504 28.8506 19.9814C26.7119 21.8125 23.731 22.728 19.9077 22.728H14.1729V24.3979H21.1602V29.7373ZM14.1729 17.3887H19.8638C23.5552 17.3887 25.4009 15.77 25.4009 12.5327C25.4009 10.9946 24.9321 9.75684 23.9946 8.81934C23.0571 7.86719 21.7607 7.38379 20.1055 7.36914H14.1729V17.3887Z" fill="white"></path></g>
+                  </svg>
+                  /кг
+                </p>
                 <h3><a class="link-basic" href="blank.html">Сливочное с мятным сиропом</a></h3>
               </article>
             </li>
@@ -633,5 +540,6 @@
         </section>
       </footer>
     </div>
+    <script src="js/login.min.js"></script>
   </body>
 </html>
